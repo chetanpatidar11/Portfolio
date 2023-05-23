@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan Patidar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Chetan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home </a></li>
+                    <li><a href="#education">Education </a></li>
+                    <li><a href="#projects">Projects </a></li>
+                    <li><a href="#resume">Resume </a></li>
+                    <li><a href="#contectMe">Contect Me </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                My name is Chetan Patidar
+                <div>
+                    and I am a
+                    <span class="coder" id="element"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/developer.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="education">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/full_stack_banner.jpg" alt="image">
+                    <div class="vertical-title">
+                        Full Stack Developer Internship-Brain Vision Technology (Jan 2023-May 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Internship at Brain Vision Technology, where I gained valuable hands-on experience working with
+                        the company's project management system, contributing to the successful planning, execution, and
+                        monitoring of various projects.
+                        Assisted project managers in defining project goals, creating schedules, and allocating
+                        resources effectively, ensuring seamless collaboration and communication among team members.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/mca.jpeg" alt="image">
+                    <div class="vertical-title">
+                        Master's of Computer Application -NIT Calicut (2020-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I have honed my skills in programming languages such as Java, Python, and C++, allowing me to
+                        develop efficient and scalable solutions. My coursework has also included advanced topics such
+                        as artificial intelligence, database systems, and network security, enabling me to tackle
+                        complex challenges in the field.Overall, my master's degree in computer science has provided me
+                        with a comprehensive understanding of the theoretical concepts and practical applications
+                        essential for a successful career in the industry.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/bca.jpeg" alt="image">
+                    <div class="vertical-title">
+                        Bachelor's of Computer Application -Vikram University (2020-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I have been exposed to a wide range of subjects that have equipped me with a strong foundation
+                        in computer science. Throughout my studies, I have gained a deep understanding of fundamental
+                        concepts such as data structures, algorithms, and software development methodologies. I have
+                        also developed proficiency in programming languages like Java, C++, and Python, enabling me to
+                        create efficient and robust solutions.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="project">
+                    <img src="images/cnn.png" alt="Project 2">
+                    <h3>Detecting COVID-19 Using Convolution Neural Network</h3>
+                    <p>Convolutional neural networks are distinguished from other neural networks by their superior
+                        performance with image, speech, or audio signal inputs. They have three main types of layers,
+                        which are: • Convolutional layer • Pooling layer • Fully-connected (FC) layer</p>
+                    <a href="https://colab.research.google.com/drive/1NOe-oLRgqiLVA4xWe97Ijh78-EASrud2?usp=sharing"
+                        target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="images/nitc complain.jpg" alt="Project 1">
+                    <h3>NITC COMPLAINT PORTAL</h3>
+                    <p>NITC COMPLAINT PORTAL is an android application used for easy registration of complaints for NITC
+                        staffs and students. Users who have an android phone & active internet connection can create an
+                        account and can register a complaint regarding infrastructure of NITC.</p>
+                    <a href="https://github.com/chetanpatidar11/NITCComplaintPortal" target="_blank">View Project</a>
+                </div>
+                <!-- Add more project divs as needed -->
+            </div>
+        </section>
+        <hr>
+        <section class="Projects" id="resume">
+            <div class="project">
+                <h1 style="margin: 40px 0px;">Resume</h1>
+                <a href="Resume_CV_.pdf" target="_blank">Download Resume</a>
+            </div>
+        </section>
+        <hr>
+        <section class="contact" id="contectMe">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form class="contact-form" action="contact.php" method="POST" onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="social-links">
+            <a href="https://github.com/chetanpatidar11" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/chetanpatidar1011" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/8224888949" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://instagram.com/chetan_patidar_10" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Chetan Patidar. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Web Developer', 'Coder'],
+            typeSpeed: 50,
+            loop: true,
+        });
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+
+            // Additional validation logic can be added here
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
